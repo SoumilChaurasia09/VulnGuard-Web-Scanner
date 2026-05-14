@@ -106,14 +106,6 @@ VulnGuard-Web-Scanner/
 
 ---
 
-# Screenshots
-
-## Flask Web Scanner
-
-<img width="100%" src="./templates/index.html">
-
----
-
 ## Example Console Scan Output
 
 ```text
