@@ -1,0 +1,36 @@
+[32m
+--- Starting Scan on http://testphp.vulnweb.com/ ---
+
+[33m[*] Checking for Cross-Site Scripting (XSS)...
+[32m[+] [XSS] Not detected: No issues found.
+[33m[*] Checking for Cross-Site Request Forgery (CSRF)...
+[31m[!] [CSRF] Detected: No CSRF token in POST form.
+[33m[*] Checking for SQL Injection (SQLi)...
+[32m[+] [SQLi] Not detected: No issues found.
+[33m[*] Checking for Denial of Service (DoS) vulnerabilities (lightweight test)...
+[33m[!] [DoS] Simulation completed. Check server logs manually.
+[33m[*] Checking for Information Leakage...
+[31m[!] [Info Leakage] Detected: Potential leak of x-powered-by.
+[31m[!] [Info Leakage] Detected: Potential leak of server.
+[31m[!] [Info Leakage] Detected: Potential leak of php.
+[33m[*] Checking for Security Misconfigurations...
+[31m[!] [Misconfiguration] Detected: Missing security header 'X-Content-Type-Options'.
+[31m[!] [Misconfiguration] Detected: Missing security header 'X-Frame-Options'.
+[31m[!] [Misconfiguration] Detected: Missing security header 'Strict-Transport-Security'.
+[33m[*] Checking for Outdated Components...
+
+[32m
+** [Outdated Components] Detected **
+
+[36m  - Nginx:
+[36m      Latest Version: 1.23.1
+[36m      Official Site: https://nginx.org/
+[36m      CVE Information: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=nginx
+
+[36m  - PHP:
+[36m      Latest Version: 8.0.12
+[36m      Official Site: https://www.php.net/
+[36m      CVE Information: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=php
+
+[32m
+--- Scan Complete ---

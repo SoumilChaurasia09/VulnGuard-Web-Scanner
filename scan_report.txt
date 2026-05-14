@@ -1,0 +1,23 @@
+
+[*] Checking for XSS...
+[32m[-] No XSS.[0m
+
+[*] Checking for CSRF...
+
+[*] Checking for SQLi...
+[32m[-] No SQLi.[0m
+
+[*] Testing lightweight DoS...
+[31m[!] DoS simulation completed (check server logs manually for impact).[0m
+
+[*] Checking for Information Leakage...
+[31m[!] Potential Info Leakage: server. Consider removing this info from headers or publicly accessible files.[0m
+[31m[!] Potential Info Leakage: .git. Consider removing this info from headers or publicly accessible files.[0m
+
+[*] Checking for Security Misconfiguration...
+
+[*] Checking for outdated components (passive)...
+[31m[!] Possible outdated tech detected: jquery. Check its CVE details here: https://www.cve.org/SearchResults?query=jquery[0m
+
+--- Scan Complete ---
+
