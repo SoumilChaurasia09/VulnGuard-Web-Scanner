@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VulnGuard - Web Vulnerability Scanner</title>
+</head>
+<body>
+    <h1>VulnGuard</h1>
+    <form method="post">
+        <input type="text" name="url" placeholder="Enter site URL" required style="width: 300px;">
+        <button type="submit">Scan</button>
+    </form>
+
+    {% if results %}
+        <h2>Scan Results:</h2>
+        <ul>
+            {% for line in results %}
+                <li>{{ line }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
